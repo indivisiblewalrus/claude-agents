@@ -1,0 +1,71 @@
+{
+  "env": {
+    "CLAUDE_CODE_MAX_OUTPUT_TOKENS": "16384",
+    "BASH_DEFAULT_TIMEOUT_MS": "30000"
+  },
+  "permissions": {
+    "deny": [
+      "Read(.env*)",
+      "Write(/mnt/c/*)",
+      "Write(production.*)",
+      "Bash(rm -rf /)"
+    ],
+    "allowedTools": [
+      "Read",
+      "Write",
+      "Bash(git *)",
+      "Bash(npm *)",
+      "Bash(python *)",
+      "Bash(node *)",
+      "Bash(service *)"
+    ]
+  },
+  "model": "gemma4:latest",
+  "filePermissions": {
+    "allowFileCreation": true,
+    "allowDeletion": false,
+    "allowModification": true,
+    "maxFileSize": 104857600,
+    "excludePatterns": [
+      "**/.env",
+      "**/node_modules/**",
+      "**/dist/**",
+      "**/build/**",
+      "**/*.pem",
+      "**/*.key",
+      "**/.git/**"
+    ]
+  },
+  "git": {
+    "allowForcePush": false,
+    "allowForceDeleteBranch": false,
+    "warnOnForceOperations": true,
+    "skipHooksByDefault": false,
+    "amendCommitsByDefault": false
+  },
+  "github": {
+    "autoCreatePRs": false,
+    "autoComment": false,
+    "allowCommentsOnOthersIssues": false,
+    "allowMerges": false
+  },
+  "fileOperations": {
+    "stagingStrategy": "specificFiles",
+    "excludeSecretPatterns": [
+      "**/.env*",
+      "**/credentials*",
+      "**/secret*",
+      "**/password*"
+    ]
+  },
+  "commitRequirements": {
+    "requireMessage": true,
+    "defaultAuthor": false,
+    "signatureRequired": false
+  },
+  "safetyRules": {
+    "neverRunDestructiveGit": true,
+    "warnOnForcePush": true,
+    "preCommitHooksEnabled": true
+  }
+}

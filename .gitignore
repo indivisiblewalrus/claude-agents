@@ -1,0 +1,13 @@
+cache/
+downloads/
+history.json
+plugins
+session-env/
+telemetry/
+backups/
+debug/
+file-history/
+ide/
+projects/
+sessions/
+shell-snapshots/
