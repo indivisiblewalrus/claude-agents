@@ -128,3 +128,6 @@
 {"display":"exit","pastedContents":{},"timestamp":1776668098523,"project":"/home/pete/src/claude","sessionId":"5e47d16c-94ad-4689-b547-dade53c5c755"}
 {"display":"/agents","pastedContents":{},"timestamp":1776668104238,"project":"/home/pete/src/claude","sessionId":"4b52c8c4-f87b-45eb-815c-986d4d3e0955"}
 {"display":"exit","pastedContents":{},"timestamp":1776713562764,"project":"/home/pete/src/claude","sessionId":"4b52c8c4-f87b-45eb-815c-986d4d3e0955"}
+{"display":"ls","pastedContents":{},"timestamp":1776826400742,"project":"/home/pete/src/claude","sessionId":"d140b4ac-ece3-4877-ae5b-0c5d1672006c"}
+{"display":"exit","pastedContents":{},"timestamp":1776829749686,"project":"/home/pete/src/claude","sessionId":"d140b4ac-ece3-4877-ae5b-0c5d1672006c"}
+{"display":"show me the .ssh_config and known_hosts configuration to ssh into github","pastedContents":{},"timestamp":1776926656005,"project":"/home/pete/src/claude","sessionId":"a56f4f4f-8d13-4919-b21b-34faaa9e89d8"}
