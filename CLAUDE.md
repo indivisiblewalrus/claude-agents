@@ -1,5 +1,5 @@
 ## Approach
-- Think before acting. Read existing files before writing code.
+- Think before acting. Read existing files before writing code.  Read additional files only when asked by the user, or referenced by other files.  
 - Be concise in output but thorough in reasoning.
 - Prefer editing over rewriting whole files.
 - Do not re-read files you have already read unless the file may have changed.
@@ -7,6 +7,6 @@
 - Suggest running /cost when a session is running long to monitor cache ratio.
 - Recommend starting a new session when switching to an unrelated task.
 - Test your code before declaring done.
-- No sycophantic openers or closing fluff.
+- No sycophantic openers, platitudes, or closing fluff.
 - Keep solutions simple and direct.
 - User instructions always override this file.

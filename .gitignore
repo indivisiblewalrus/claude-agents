@@ -1,6 +1,6 @@
 cache/
 downloads/
-history.json
+history.jsonl
 plugins
 session-env/
 telemetry/
