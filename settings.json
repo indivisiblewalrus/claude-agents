@@ -6,22 +6,42 @@
   },
   "permissions": {
     "deny": [
+      "Bash(rm -rf /)",
+      "Bash(rm -rf *)",
       "Read(.env*)",
+      "Write(.env*)",
       "Write(/mnt/c/*)",
       "Write(production.*)",
-      "Bash(rm -rf /)"
+      "Write(production.*)",
+      "Read(**/secrets/**)",
+      "Write(.github/workflows/*)",
+      "Bash(sudo *)",
+      "Bash(git push *)",
+      "Bash(git merge *)",
+      "Bash(git rebase *)",
+      "Bash(npm publish *)",
+      "Bash(docker *)",
+      "Bash(curl * | sh)",
+      "Bash(wget *)",
+      "Bash(chmod *)",
+      "Bash(chown *)"
     ],
-    "allowedTools": [
+    "allow": [
       "Read",
       "Write",
+      "Glob",
+      "Grep",
+      "LS",
       "Bash(git *)",
       "Bash(npm *)",
       "Bash(python *)",
       "Bash(node *)",
-      "Bash(service *)"
+      "Bash(systemctl *)",
+      "Bash(cat *)", "Bash(head *)", "Bash(tail *)",
+      "Bash(wc *)", "Bash(find *)", "Bash(echo *)"
     ]
   },
-  "model": "gemma4:latest",
+  "model": "Qwen3.6-35B-A3B-UD-Q4_K_S:latest",
   "filePermissions": {
     "allowFileCreation": true,
     "allowDeletion": false,
@@ -68,5 +88,7 @@
     "neverRunDestructiveGit": true,
     "warnOnForcePush": true,
     "preCommitHooksEnabled": true
-  }
+  },
+  "preferredNotifChannel": "notifications_disabled",
+  "autoCompactEnabled": false
 }
